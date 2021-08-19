@@ -1,6 +1,13 @@
 <template>
   <view class="content">
-    <!-- <image class="logo" src="/static/logo.png"></image> -->
+    <view style="display:flex;align-item:center;flex:1;width:100%">
+      <uni-icons type="search" size="30"></uni-icons>
+      <uni-easyinput
+        v-model="goods"
+        placeholder="大家都在搜“520情人节礼物”"
+      ></uni-easyinput>
+      <uni-icons type="chat" size="30"></uni-icons>
+    </view>
     <view>
       <text class="title">{{ title }}</text>
     </view>
@@ -12,10 +19,13 @@ export default {
   data() {
     return {
       title: 'Hello',
+      goods: '',
     }
   },
   onLoad() {},
-  methods: {},
+  methods: {
+    aa() {},
+  },
 }
 </script>
 
